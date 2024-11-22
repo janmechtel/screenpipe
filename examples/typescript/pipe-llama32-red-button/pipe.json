@@ -1,0 +1,47 @@
+{
+  "enabled": true,
+  "fields": [
+    {
+      "default": 300,
+      "description": "context window for help request",
+      "name": "interval",
+      "type": "number"
+    },
+    {
+      "default": "http://localhost:11434/api",
+      "description": "ollama api url",
+      "name": "ollamaApiUrl",
+      "type": "string"
+    },
+    {
+      "default": "llama3.2:3b-instruct-q4_K_M",
+      "description": "ollama model",
+      "name": "ollamaModel",
+      "type": "string"
+    },
+    {
+      "default": 100,
+      "description": "number of records to retrieve from screenpipe per page",
+      "name": "pageSize",
+      "type": "number"
+    },
+    {
+      "default": "",
+      "description": "custom prompt to override part of the system prompt for comment generation",
+      "name": "customCommentPrompt",
+      "type": "string"
+    },
+    {
+      "default": "",
+      "description": "Specific window name to filter the screen data, for example 'gmail', 'john', 'slack', 'myCodeFile.tsx', etc. this will filter out audio",
+      "name": "windowName",
+      "type": "window"
+    },
+    {
+      "default": "ocr",
+      "description": "Type of content to analyze: 'ocr', 'audio', or 'all'. OCR usually contains more content, so it's recommended to choose either OCR or audio rather than 'all' for better performance.",
+      "name": "contentType",
+      "type": "contentType"
+    }
+  ]
+}
